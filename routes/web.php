@@ -26,3 +26,11 @@ Route::get('/first', function () {
 Route::get('/page', function () {
     return view('page');
 });
+
+// Form
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::post('formSubmitByPOST', [\App\Http\Controllers\FormController::class, 'getDataUsingMethodAsPOST']);
+Route::get('formSubmitByGET', [\App\Http\Controllers\FormController::class, 'getDataUsingMethodAsGET']);
