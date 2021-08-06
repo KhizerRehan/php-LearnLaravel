@@ -9,6 +9,11 @@
     <h1>Master Layout</h1>
 
 
+    @section('sidebar')
+        This is the master sidebar.
+    @show
+
+
     <div id="container">
         @yield('content')
     </div>

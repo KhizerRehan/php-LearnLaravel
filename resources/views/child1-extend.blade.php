@@ -3,6 +3,16 @@
 @section('title', 'Child-1')
 <h3>I am Child1 Layout</h3>
 
+@section('sidebar')
+    @parent
+
+  <ul>
+      <li>Child-1</li>
+      <li>Child-1.1</li>
+      <li>Child-1.2</li>
+  </ul>
+@endsection
+
 
 @section('content')
     <p>This is my body content of child-1.</p>
