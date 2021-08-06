@@ -7,5 +7,10 @@
     </head>
     <body>
     <h1>Master Layout</h1>
+
+
+    <div id="container">
+        @yield('content')
+    </div>
     </body>
 </html>
