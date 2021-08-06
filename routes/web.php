@@ -34,3 +34,7 @@ Route::get('/form', function () {
 
 Route::post('formSubmitByPOST', [\App\Http\Controllers\FormController::class, 'getDataUsingMethodAsPOST']);
 Route::get('formSubmitByGET', [\App\Http\Controllers\FormController::class, 'getDataUsingMethodAsGET']);
+
+
+// Web
+Route::get('web', [\App\Http\Controllers\WebController::class, 'index']);
