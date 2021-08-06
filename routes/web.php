@@ -38,3 +38,7 @@ Route::get('formSubmitByGET', [\App\Http\Controllers\FormController::class, 'get
 
 // Web
 Route::get('web', [\App\Http\Controllers\WebController::class, 'index']);
+
+// Extends
+Route::view('child1','child1-extend');
+Route::view('child2','child2-extend');
